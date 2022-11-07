@@ -6,8 +6,7 @@ import { useContext } from "react";
 
 
 export default function ProductsPage() {
-  const {product} = useContext(CartContext)
-
+  const { product } = useContext(CartContext)
   
   const navigate = useNavigate();
   return (
@@ -22,8 +21,7 @@ export default function ProductsPage() {
               name={product.name}
               icon={product.icon}
               price={product.price}
-              select={product.isSelected}
-              
+              select={product.isSelected}              
             />
           )
         })

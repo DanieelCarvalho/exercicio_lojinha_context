@@ -13,6 +13,7 @@ export default function App() {
   { name: "Doces diversos", icon: "🍬", price: 12.3, isSelected:false }
 ]) 
   const [cart, setCart] = useState(0)
+  
   return (
     <CartContext.Provider value={{cart, setCart, product, setProduct}}>
       <BrowserRouter>
